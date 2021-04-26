@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     public void calcularBpm(){
         tTranscurrido = tFinal - tInicial;
         bpm = (int) (60 * golpe / tTranscurrido);
-        // Log.i("Info", "SEGUNDOS -> " + Integer.toString((int) tTranscurrido));
+        Log.i("Info", "SEGUNDOS -> " + Integer.toString((int) tTranscurrido));
         Log.i("Info", "BPM -> " + bpm);
     }
 }
