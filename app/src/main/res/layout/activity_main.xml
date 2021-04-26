@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="calcularBpm"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
+        android:textSize="30dp"
         android:layout_height="wrap_content"
         android:text="Contador de BPM"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,6 +22,7 @@
 
     <Button
         android:id="@+id/btnTap"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="sumarGolpe"
@@ -31,11 +32,19 @@
 
     <Button
         android:id="@+id/reset"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="resetearBpm"
         android:text="RESET"
         tools:ignore="InvalidId,MissingConstraints"
         tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tvBpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="BPM" />
 
 </LinearLayout>
